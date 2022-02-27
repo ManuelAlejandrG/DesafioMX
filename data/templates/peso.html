@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+  <title>Tasa Peso-dolar</title>
+<table>
+    <tr>
+        <th>Fecha</th>
+        <th>Valor</th>
+        <th>Maximo</th>
+        <th>Minimo</th>
+        <th>Media</th>
+      </tr>
+{% for a,b in peso %}
+
+      <tr>
+        <td> {{ a }} </td>
+        <td> {{ b }} </td>
+        <td>  {{ max }} </td>
+        <td>  {{ min }} </td>
+        <td>  {{ mean }} </td>
+    </tr>
+
+
+{% endfor %}
+
+</table>
+
+
+</body>
+</html>
